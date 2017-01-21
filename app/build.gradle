@@ -1,21 +1,51 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
 
+
+    signingConfigs {
+//        release {
+//            storeFile file("release.keystore")
+//            storePassword
+//            keyAlias
+//            keyPassword
+//        }
+        develop {
+            storeFile file("debug.jks")
+            // KeyHash
+            storePassword "bousai"
+            keyAlias "bousai"
+            keyPassword "bousai"
+        }
+    }
     defaultConfig {
         applicationId "com.riku.land.cs.bousaiknowledge"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug{
+            signingConfig signingConfigs.develop
+            // デバッグ用のパッケージのパッケージ名に接尾辞を付ける
+//            applicationIdSuffix '.debug'
+            debuggable true
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
     }
 }
 
@@ -23,4 +53,25 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
+    //firebase
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+//    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    //    compile 'com.google.firebase:firebase-core:10.0.1'
+    //    compile 'com.firebase:firebase-client-android:2.5.0'
+    //    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.gms:google-services:3.0.0'
+    //kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //apptour
+    compile 'com.vlonjatg.android:app-tour:1.0'
+    //facebook
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    //multidex
+    compile 'com.android.support:multidex:1.0.0'
 }
+repositories {
+    mavenCentral()
+}
+apply plugin: 'com.google.gms.google-services'

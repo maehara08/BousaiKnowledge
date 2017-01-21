@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Bousai  Knowledge</string>
+    <string name="app_name">Bousai Knowledge</string>
+    <!-- AppTour-->
+    <string name="googlePlus">Sign up with Google +</string>
+    <string name="facebook">Sign up with Facebook</string>
+    <string name="twitter">Sign up with Twitter</string>
+    <string name="customFragment">This is a custom slide. You can mix between library and your own slides easily.</string>
+    <string name="facebook_app_id">181816198887232</string>
+
 </resources>
