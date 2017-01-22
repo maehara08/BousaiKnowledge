@@ -1,10 +1,25 @@
 <resources>
     <string name="app_name">Bousai Knowledge</string>
     <!-- AppTour-->
+    <string name="sign_in">Sigin in</string>
+    <string name="sign_up">Sigin up</string>
     <string name="googlePlus">Sign up with Google +</string>
     <string name="facebook">Sign up with Facebook</string>
     <string name="twitter">Sign up with Twitter</string>
     <string name="customFragment">This is a custom slide. You can mix between library and your own slides easily.</string>
-    <string name="facebook_app_id">181816198887232</string>
+    <string name="facebook_app_id">1865566416992365</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string-array name="area_list">
+        <item>住宅密集地帯</item>
+        <item>マンション</item>
+        <item>海 川 沿岸</item>
+    </string-array>
+
+    <string-array name="age_list">
+        <item>一人暮らし</item>
+        <item>小さな子供あり</item>
+        <item>高齢者あり</item>
+    </string-array>
 
 </resources>

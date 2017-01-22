@@ -1,4 +1,4 @@
-package com.riku.land.cs.bousaiknowledge;
+package com.riku.land.cs.bousaiknowledge.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
+import com.riku.land.cs.bousaiknowledge.R;
+import com.riku.land.cs.bousaiknowledge.fragment.CustomSlide;
 import com.vlonjatg.android.apptourlibrary.AppTour;
 import com.vlonjatg.android.apptourlibrary.MaterialSlide;
 

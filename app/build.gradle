@@ -37,7 +37,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug{
+        debug {
             signingConfig signingConfigs.develop
             // デバッグ用のパッケージのパッケージ名に接尾辞を付ける
 //            applicationIdSuffix '.debug'
@@ -48,6 +48,7 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 }
+def retrofit_version = "2.1.0"
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -56,7 +57,9 @@ dependencies {
     //firebase
     compile 'com.google.firebase:firebase-core:10.0.1'
     compile 'com.google.firebase:firebase-auth:10.0.1'
-//    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    //    compile 'com.google.android.gms:play-services-auth:10.0.1'
     //    compile 'com.google.firebase:firebase-core:10.0.1'
     //    compile 'com.firebase:firebase-client-android:2.5.0'
     //    compile 'com.google.firebase:firebase-auth:10.0.1'
@@ -70,6 +73,16 @@ dependencies {
     compile 'com.google.android.gms:play-services:10.0.1'
     //multidex
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:design:25.0.1'
+    //HTTP
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+//    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    compile "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    //RxJava
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
 }
 repositories {
     mavenCentral()

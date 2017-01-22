@@ -9,25 +9,25 @@
         android:layout_height="match_parent"/>
 
     <Button
-        android:id="@+id/googlePlusButton"
+        android:id="@+id/sign_up_button"
         android:layout_width="fill_parent"
         android:layout_height="56dp"
-        android:layout_above="@+id/facebookButton"
+        android:layout_above="@+id/sign_in_button"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/googlePlus"
+        android:text="@string/sign_up"
         android:theme="@style/GooglePlusButtonStyle" />
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/facebookButton"
+    <Button
+        android:id="@+id/sign_in_button"
         android:layout_width="fill_parent"
         android:layout_height="56dp"
         android:layout_above="@+id/introContent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="@string/facebook"
-        android:theme="@style/FacebookButtonStyle" />
+        android:text="@string/sign_in"
+        android:theme="@style/GooglePlusButtonStyle" />
 
     <!--<Button-->
         <!--android:id="@+id/twitterButton"-->

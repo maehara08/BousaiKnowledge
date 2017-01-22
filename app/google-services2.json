@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "50293270391",
+    "firebase_url": "https://bousai-b8cc2.firebaseio.com",
+    "project_id": "bousai-b8cc2",
+    "storage_bucket": "bousai-b8cc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50293270391:android:fcbcaf184bf7846d",
+        "android_client_info": {
+          "package_name": "com.riku.land.cs.bousaiknowledge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50293270391-g6psdqkrqmsidjga50f1pu0v0iqslnlf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riku.land.cs.bousaiknowledge",
+            "certificate_hash": "E1C67C2BC4B9A5E6686A7028942619A9CD88BED9"
+          }
+        },
+        {
+          "client_id": "50293270391-euunhjamol2g8rihh64b1ebbdtqln89l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_eFKBD2wz-B0VEC7-RdsTZyl0Pwds870"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50293270391-euunhjamol2g8rihh64b1ebbdtqln89l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "50293270391-iv8q10sapkenh08o72sah3hic990j9q9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Leo.-7-1-21Bousai"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

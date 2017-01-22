@@ -5,6 +5,8 @@ import android.support.annotation.IdRes
 import android.support.multidex.MultiDexApplication
 import android.view.View
 import com.facebook.FacebookSdk
+import com.facebook.appevents.AppEventsLogger
+import com.google.firebase.FirebaseApp
 
 /**
  * Created by riku_maehara on 17/01/21.
@@ -15,7 +17,8 @@ public class MyApplication : MultiDexApplication() {
     override fun onCreate() {
         super.onCreate()
         FacebookSdk.sdkInitialize(applicationContext)
-//        Firebase.setAndroidContext(this)
+        FirebaseApp.initializeApp(applicationContext)
+        AppEventsLogger.activateApp(this)
 
     }
 
