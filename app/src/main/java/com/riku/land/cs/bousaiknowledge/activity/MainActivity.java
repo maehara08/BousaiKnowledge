@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
     private MyAdapter myAdapter;
+    static public MyItem.MyContent myContents[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        fab.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                setUpMyAdapter();
+                myAdapter.notifyDataSetChanged();
+                return false;
+            }
+        });
     }
 
     private void setUpMyAdapter(){
@@ -74,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onNext(MyItem myItem) {
                         Log.d(TAG, "onNext"+myItem.getContens()[0].getContent());
-                        MyItem.MyContent myContents[] = myItem.getContens();
+                        myContents = myItem.getContens();
                         for (int i = 0 ;i<myContents.length;i++){
                             myAdapter.add(myContents[i]);
                         }

@@ -13,7 +13,9 @@ import rx.Observable
  * Created by riku_maehara on 16/11/24.>
  */
 class BousaiService() {
-    val BASE_URL = "https://bousai4-sasurai-usagi3.c9users.io/"
+    companion object{
+        val BASE_URL = "https://bousai4-sasurai-usagi3.c9users.io/"
+    }
 
     fun BousaiService(): Unit {
     }

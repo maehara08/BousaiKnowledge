@@ -23,17 +23,17 @@ public class AppTourActivity extends AppTour {
         int customSlideColor = Color.parseColor("#009866");
 
         //Create pre-created fragments
-        Fragment firstSlide = MaterialSlide.newInstance(R.mipmap.ic_launcher, "防災アプリとは？",
-                "災害対策のSNSです使い方はhogehoge", Color.WHITE, Color.WHITE);
+        Fragment firstSlide = MaterialSlide.newInstance(R.drawable.app_tour_1, "防災アプリとは？",
+                "防災アプリは被災者の経験をもとに、災害への対策を考えられるSNSです。", Color.WHITE, Color.WHITE);
 
-        Fragment secondSlide = MaterialSlide.newInstance(R.mipmap.ic_launcher, "Share and edit together",
-                "Write on your own or invite more people to contribute.", Color.WHITE, Color.WHITE);
+        Fragment secondSlide = MaterialSlide.newInstance(R.drawable.app_tour_2, "概要1",
+                "被災経験のある方は、その経験を投稿して、被災経験のない方にその内容を活かしてもらえます。", Color.WHITE, Color.WHITE);
 
-        Fragment thirdSlide = MaterialSlide.newInstance(R.mipmap.ic_launcher, "Automatically save to the web",
-                "Never lose your progress, so you can keep working from any computer or device.", Color.WHITE, Color.WHITE);
+        Fragment thirdSlide = MaterialSlide.newInstance(R.drawable.app_tour_3, "概要2",
+                "被災経験のない方は投稿された内容を参考に、災害に対しての備えを行うことができます。", Color.WHITE, Color.WHITE);
 
-        Fragment forthSlide = MaterialSlide.newInstance(R.mipmap.ic_launcher, "Edit PowerPoint presentations",
-                "Open, edit, and save PowerPoint files - all withing Slides.", Color.WHITE, Color.WHITE);
+        Fragment forthSlide = MaterialSlide.newInstance(R.drawable.app_tour_4, "有事の際には",
+                "このアプリは、いざという時にはハザードマップとなって安全に避難ができるよう支援します。", Color.WHITE, Color.WHITE);
 
         //Add slides
         addSlide(firstSlide, firstColor);

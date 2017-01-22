@@ -23,10 +23,20 @@
         android:id="@+id/sign_in_button"
         android:layout_width="fill_parent"
         android:layout_height="56dp"
-        android:layout_above="@+id/introContent"
+        android:layout_above="@+id/debug_button"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/sign_in"
+        android:theme="@style/GooglePlusButtonStyle" />
+
+    <Button
+        android:id="@+id/debug_button"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_above="@+id/introContent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="debug mode"
         android:theme="@style/GooglePlusButtonStyle" />
 
     <!--<Button-->

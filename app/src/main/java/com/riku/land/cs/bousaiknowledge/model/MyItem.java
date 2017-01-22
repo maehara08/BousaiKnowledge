@@ -33,6 +33,7 @@ public class MyItem implements Serializable {
         private int id;
         private String name;
         private String opinion;
+        private String graph_image_url;
         private String content;
 
         public int getId() {
@@ -65,6 +66,14 @@ public class MyItem implements Serializable {
 
         public void setContent(String content) {
             this.content = content;
+        }
+
+        public String getGraph_image_url() {
+            return graph_image_url;
+        }
+
+        public void setGraph_image_url(String graph_image_url) {
+            this.graph_image_url = graph_image_url;
         }
     }
 }
